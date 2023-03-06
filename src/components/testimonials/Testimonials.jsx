@@ -9,7 +9,7 @@ export default function Testimonials() {
       img1: "assets/html.png",
       img2: "assets/javascript.png",
       img3: "assets/cpp.png",
-      skills:['C++/C', 'Python', 'Javascript','HTML',  'Java']
+      skills:['C++/C', 'Javascript',  'Java']
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ export default function Testimonials() {
       img1: "assets/blockchain.png",
       img2: "assets/database.png",
       img3: "assets/ml.png",
-      skills:['Data Structure & Algorithms', 'MongoDB (NoSQL)' ,'MySQL (SQL)', 'Machine Learning (Basic)','DeepLearning (Basic)' ],
+      skills:['Data Structure & Algorithms', 'MongoDB (NoSQL)' ,'MySQL (SQL)' ],
       featured: true,
     },
     {
@@ -28,7 +28,7 @@ export default function Testimonials() {
       img1: "assets/django.png",
       img2: "assets/react.png",
       img3: "assets/node.jpg",
-      skills:['ReactJs', 'NodeJs', 'SASS / CSS', 'Django',  'Tkinter']
+      skills:['ReactJs', 'NodeJs', 'CSS']
        
     },
   ];
