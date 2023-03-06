@@ -1,0 +1,96 @@
+@import "../../global.scss";
+.about{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   .card{
+       width: 80%;
+       height: 400px;
+       background-color: black;
+       border-radius: 10px;
+       opacity: 0.9;
+       padding: 20px;
+       box-shadow: 0 10px 60px -10px black;
+       z-index: 10;
+       transition: all 1s ease;
+       will-change: transform, box-shadow, background;
+       pointer-events: auto;
+       color: rgb(247, 236, 236);
+       &.hidden {
+        opacity: 0;
+        pointer-events: none;
+        @include mobile{
+          height: 800px;
+        }
+}
+   }
+  //  .card:hover {
+  //   animation: rotate 0.7s ease-in-out both;
+  // }
+  
+  .card:hover span {
+    animation: storm 1s ease-in-out both;
+    animation-delay: 1s;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+    25% {
+      transform: rotate(0.5deg) translate3d(0, 0, 0);
+    }
+    50% {
+      transform: rotate(0.5deg) translate3d(0, 0, 0);
+    }
+    75% {
+      transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes storm {
+    0% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+    25% {
+      transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+    50% {
+      transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+    75% {
+      transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+  }
+  .about_desc{
+    padding: 20px;
+   text-align: left;
+   word-spacing: 3px;
+   line-height: 27px;
+   font-size: 16px;
+   font-weight: 100;
+   
+  }
+  .listItems{
+    font-size: 16px;
+    font-weight: 100;
+    margin: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    li{
+      margin: 7px;
+    }
+  }
+  p{
+    font-size: 16px;
+    font-weight: 100;
+  }
+}
