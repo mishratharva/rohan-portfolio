@@ -9,7 +9,7 @@ export default function Testimonials() {
       img1: "assets/html.png",
       img2: "assets/javascript.png",
       img3: "assets/cpp.png",
-      skills:['C++/C', 'Javascript',  'Java']
+      skills:['C++/C', 'Kotlin',  'Java']
     },
     {
       id: 2,
